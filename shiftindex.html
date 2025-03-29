@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shiftstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                        figtree: ["Figtree", "sans-serif"],
+                        lato: ["Lato", "sans-serif"],
+                        libre: ["Libre Franklin", "sans-serif"],
+                        montserrat: ["Montserrat", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="h-full w-full m-0 p-0 font-poppins font-regular">
+    <div id="main">
+        <div id="cursor" class="h-[2vw] w-[2vw] rounded-full  fixed z-[]"></div>
+
+
+        <div id="nav" class="pageone flex flex-row justify-between px-[5vw] pt-[2vw] font-Libre font-regular   ">
+            <div id="name">
+                <h1 class="cursor-pointer ">The Shift</h1>
+            </div>
+            <div id="elems" class="   flex flex-col item-center ">
+                <div id="elems" class="underline mb-[-.5vw]">HOME</div>
+                <div id="elems" class=" elems mb-[-.7vw] cursor-pointer">PROJECT</div>
+                <div id="elems" class=" elems mb-[-.7vw] cursor-pointer">RESEARCH</div>
+                <div id="elems" class="elems mb-[-.7vw] cursor-pointer">ABOUT</div>
+            </div>
+        </div>
+
+
+        <div id="page1" class="h-[100vh] w-full  relative ">
+            <div id="text" class="leading-none pl-[22vw] mt-[8vw]">
+                <div id="text1" class="text-[9vw] mt-[4vw] tracking-tighter fonts load">EXPLORING</div>
+                <div id="text2" class="flex items-center ">
+                    <h1 class="text-[11vw] mt-[-2.5vw] font-poppins font-normal tracking-tighter  ml-[-10vw] load">THE SHIFT</h1>
+                    <p class="opacload">THE SHIFT CREATES <br> FUTURE-INSPIRED PROJECTS FOR <br> PEOPLE AND BUSINESSES DESIRING <br> A
+                        SHIFT.BASED IN BWP,WORKING <br> WORLDWIDE</p>
+                </div>
+                <div id="text" class="flex ">
+                    <h1 class=" text text-[9vw] fonts load">OF TODAY</h1>
+                    <p class="ml-[10vw] tracking-tighter pageone">PROJECTS</p>
+                </div>
+            </div>
+
+
+            <!-- the clock for the test -->
+            <div id="clock" class="flex items-center  mx-[5vw] pageone ">
+                <div class="h-[2vw] w-[2vw] "><img src="./time-fill.svg" alt=""></div>
+                <div id="clocck">
+                    <main class="container ml-[-.3vw]">
+                        <digital-clock class="clock">
+                            <div class="current-time">
+                                <span class="hour"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+                            </div>
+                        </digital-clock>
+                    </main>
+                </div>
+            </div>
+            <!-- till here -->
+            <div id="videobox"
+                class="pageone absolute cursor-pointer bg-red-300 h-[30vw] w-[20vw] right-[2vw] top-[23vw] rounded-full overflow-hidden flex items-center justify-center z-9999">
+                <video id="bgVideo" autoplay muted class="object-cover h-full w-full absolute z-[9999]"></video>
+            </div>
+            <div id="counter" class="pageone absolute top-[30vw] right-[25vw] text-black font-poppins font-regular text-lg ">
+                <h2>1/3</h2>
+            </div>
+            <div id="black" class=" top-[42vw] h-[30vh] absolute w-full bg-black"></div>
+
+        </div>
+
+        <div id="page2" class=" h-[80vh] w-full bg-black">
+            <div id="center" class="flex items-center justify-center mt-[6vw]">
+                <div id="1text">
+                    <h1 class="text-stone-100 scrool">WHAT WE DO</h1>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class="mt-[4vw] mx-[3vw] border-stone-700 border-b-[.1vw] "></div>
+            </div>
+            <div id="center2" class="flex items-center justify-center text-center pt-[3vw]">
+                <div id="text2" class=" leading-none font text-stone-100 text-[3vw] scrool">The Codenest is creative collective
+                    based in Pakistan.<br > <span class="scrool">We provide new perspectives and solutions. </span></div>
+            </div>
+            <div id="circle"
+                class="h-[10vw] w-[10vw] rounded-full bg-white ml-[45vw] mt-[3vw] flex items-center justify-center  ">
+                <h1>About us</h1>
+            </div>
+        </div>
+        <div id="page3" class="h-[32.4vh] w-full ">
+            <div id="center" class="flex items-center justify-center mt-[4vw]">
+                <div id="1text">
+                    <h1 class="text-black items-center text-center text-[1.3vw] scrool">FEATURED PROJECTS <br>AND RESEARCH
+                    </h1>
+                </div>
+            </div>
+            <div id="center2" class="flex items-center justify-center mt-[8vw]">
+                <div id="1text">
+                    <h1 class="text-black items-center text-center cursor-pointer underline scrool">VIEW ALL PROJECT</h1>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class="mt-[3vw] mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+        </div>
+        <div id="page4" class=" h-[230vh] w-full ">
+            <div id="overlay1" class="mx-[3vw]   absolute"></div>
+            <div id="firstbox" data-image="./1image.png" class="firstbox box mx-[3vw] py-[4vw] flex  gap-[1vw] relative ">
+                <div class="text1 ml-[14vw]">
+                    <div id="num">
+                        <h4 class=" ">(01)</h4>
+                    </div>
+                    <div id="text" class="fonts text-[5vw]">
+                        <h4>FOCUS ON<br>STRETCH PLEATS</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class=" mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+            <div id="overlay" class="mx-[3vw]   absolute"></div>
+            <div id="secondbox" data-image="./2image.png"   class="box mx-[3vw] py-[4vw] relative flex gap-[1vw]">
+                <div class="text2 ml-[14vw]">
+                <div id="num">
+                    <h4 class="">(02)</h4>
+                </div>
+                <div id="text" class="fonts text-[5vw]">
+                    <h4>LEVEL OF <br>DISTANCE</h4>
+                </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class=" mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+            <div id="overlay3" class="mx-[3vw]   absolute"></div>
+            <div id="thirdbox" data-image="./3image.png" class="box mx-[3vw] py-[4vw] relative   flex gap-[1vw]">
+                <div class="text3  ml-[14vw]">
+                    <div id="num">
+                        <h4 class="">(03)</h4>
+                    </div>
+                    <div id="text" class="fonts text-[5vw]">
+                        <h4>GATE SYSTEM<br>VIDEO</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class=" mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+            <div id="overlay4" class="mx-[3vw]   absolute"></div>
+            <div id="forthbox" data-image="./4image.png"  class="box mx-[3vw] py-[4vw] relative  flex gap-[1vw]">
+                <div class="text4 ml-[14vw]">
+                <div id="num">
+                    <h4 class="">(04)</h4>
+                </div>
+                <div id="text" class="fonts text-[5vw]">
+                    <h4>ATELIER WEN</h4>
+                </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class=" mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+            <div id="overlay5" class="mx-[3vw]   absolute"></div>
+            <div id="fifthbox" data-image="./5image.png"  class="box mx-[3vw] py-[4vw]   relative flex gap-[1vw]">
+                <div class="text5 ml-[14vw]">
+                <div id="num">
+                    <h4 class="">(05)</h4>
+                </div>
+                <div id="text" class="fonts text-[5vw]">
+                    <h4>IPSA AQUA<br>PLAY ARTS</h4>
+                </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class=" mx-[3vw] border-stone-900 border-b-[.1vw] "></div>
+            </div>
+          
+            
+            
+        </div>
+
+        <div id="2ndlast" class=" h-[100vh] w-full bg-black">
+
+            <div id="center" class="flex items-center justify-center  text-center">
+                <div id="1text">
+                    <h1 class="text-stone-100 mt-[3vw] ">OUR TERRITORY<br>AND FIELDS</h1>
+                </div>
+            </div>
+            <div id="center2" class="flex items-center justify-center mt-[8vw]">
+                <div id="1text">
+                    <h1 class="text-white items-center text-center cursor-pointer underline scrool">ABOUT US</h1>
+                </div>
+            </div>
+            <div id="animation" class="leading-none mt-[4vw]">
+
+                <div id="moving" class="text-white moving flex items-center justify-center gap-[4vw] ">
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                    <div id="movingin" class="movingin flex items-center">
+                        <h5>STRATEGY</h5>
+                        <h5>SHIFT</h5>
+                        <h5>PRODUCE</h5>
+                        <h5>DIRECTION</h5>
+                        <h5>DESIGN</h5>
+                        <h5>TECHNOLOGY</h5>
+                        <h5>CONSULTING</h5>
+                        <h5>BRANDING</h5>
+                    </div>
+                </div>
+
+                <div id="movingleft" class="text-white moving flex items-center justify-center gap-[4vw] ">
+                    <div id="movingleftin" class="movingleftin flex items-center">
+                        <h5>EDUCATION</h5>
+                        <h5 class="fonts">FOOD</h5>
+                        <h5>LIVING SPACE</h5>
+                        <h5 class="fonts">EVENT</h5>
+                        <h5>SPACE</h5>
+                        <h5 class="fonts">PRODUCTS</h5>
+                        <h5>FASHION</h5>
+                        <h5 class="fonts">ENTERTAINMENT</h5>
+                    </div>
+                    <div id="movingleftin" class="movingleftin flex items-center">
+                        <h5>EDUCATION</h5>
+                        <h5 class="fonts">FOOD</h5>
+                        <h5>LIVING SPACE</h5>
+                        <h5 class="fonts">EVENT</h5>
+                        <h5>SPACE</h5>
+                        <h5 class="fonts">PRODUCTS</h5>
+                        <h5>FASHION</h5>
+                        <h5 class="fonts">ENTERTAINMENT</h5>
+                    </div>
+                    <div id="movingleftin" class="movingleftin flex items-center">
+                        <h5>EDUCATION</h5>
+                        <h5 class="fonts">FOOD</h5>
+                        <h5>LIVING SPACE</h5>
+                        <h5 class="fonts">EVENT</h5>
+                        <h5>SPACE</h5>
+                        <h5 class="fonts">PRODUCTS</h5>
+                        <h5>FASHION</h5>
+                        <h5 class="fonts">ENTERTAINMENT</h5>
+                    </div>
+                    <div id="movingleftin" class="movingleftin flex items-center">
+                        <h5>EDUCATION</h5>
+                        <h5 class="fonts">FOOD</h5>
+                        <h5>LIVING SPACE</h5>
+                        <h5 class="fonts">EVENT</h5>
+                        <h5>SPACE</h5>
+                        <h5 class="fonts">PRODUCTS</h5>
+                        <h5>FASHION</h5>
+                        <h5 class="fonts">ENTERTAINMENT</h5>
+                    </div>
+                    <div id="movingleftin" class="movingleftin flex items-center">
+                        <h5>EDUCATION</h5>
+                        <h5 class="fonts">FOOD</h5>
+                        <h5>LIVING SPACE</h5>
+                        <h5 class="fonts">EVENT</h5>
+                        <h5>SPACE</h5>
+                        <h5 class="fonts">PRODUCTS</h5>
+                        <h5>FASHION</h5>
+                        <h5 class="fonts">ENTERTAINMENT</h5>
+                    </div>
+
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class="mt-[14vw] mx-[3vw] border-stone-100 border-b-[.1vw] "></div>
+            </div>
+
+        </div>
+        <div id="last" class=" h-[100vh] w-full bg-black">
+            <div id="center" class=" flex items-center justify-between px-[4vw]  pt-[3vw]">
+
+                <div id="backtop" class="text-stone-100 items-center flex">
+                    <div id="circle1" class="flex items-center justify-center "> <img src="./user-smile-line (1).svg"
+                            alt="" class="h-[4vw]  w-[3vw]"> </div>
+                </div>
+                <div id="1text" class="">
+                    <h1 class="text-white items-center text-center text-[1.3vw] ml-[4vw] leading-none scrool">BASED IN PAK
+                        <br>WORKING WORLDWIDE
+                    </h1>
+                </div>
+                <div id="backtop" class="text-stone-100 items-center flex ">
+                    <h4 >BACK TO TOP</h4>
+                    <div id="circle1"
+                        class="ml-[1vw] h-[3vw] w-[3vw] rounded-full bg-stone-100 flex items-center justify-center">
+                        <img src="./arrow-up-line.svg" alt="" class="h-[3vw]  w-[2vw]"> </div>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class="mt-[5vw] mx-[3vw] border-stone-100 border-b-[.1vw] "></div>
+            </div>
+            <div id="center2" class="flex items-center justify-center mt-[4vw]">
+                <div id="1text">
+                    <h1
+                        class=" text-white items-center font-poppins font-light text-center text-[12.7vw] tracking-tight cursor-pointer scrool">
+                        GET <span class="fonts text-[10vw]">IN</span> TOUCH</h1>
+                </div>
+            </div>
+            <div id="line">
+                <div id="border" class="mt-[7vw] mx-[3vw] border-stone-100 border-b-[.1vw] "></div>
+            </div>
+            <div id="center" class=" flex items-center justify-between px-[4vw]  pt-[3vw]">
+
+                <div id="backtop" class="text-stone-100 items-center flex">
+                    <div id="circle1" class="flex items-center justify-center "> &copy;2024 </div>
+                </div>
+                <div id="1text" class="">
+                    <h1 class="text-white items-center text-center text-[1.3vw] leading-none underline ">INSTAGRAM
+                    </h1>
+                </div>
+                <div id="backtop" class="text-stone-100 items-center flex border rounded-full px-[.5vw] py-[0vw]">
+                    <h4>CONNECT</h4>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="shiftscript.js"></script>
+</body>
+
+</html>

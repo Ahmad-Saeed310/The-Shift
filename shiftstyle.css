@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'TWK';
+    src: url(./font2.ttf);
+}
+@font-face {
+    font-family: "i";
+    src: url(./i.ttf);
+}
+@font-face {
+    font-family: "thin font";
+    src: url(./Costaline-Regular.otf);
+}
+.fonts{
+    font-family: "thin font";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	text-align: center;
+    width: 5%;
+    padding-left: .3vw;
+    margin-left: 4vw;
+    
+    }
+
+.current-time {
+	font-size: 1rem;
+}
+
+@keyframes underlineLeftToRight {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+.elems {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Text color */
+}
+
+.elems::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: .4vw; /* Adjust distance from text */
+    width: 0; /* Start hidden */
+    height: 1px;
+    background-color: black; /* Underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+.elems:hover::after {
+    animation: underlineLeftToRight 0.6s forwards;
+}
+
+.font{
+    font-family: 'TWK', Arial, sans-serif;
+}
+
+#circle:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: ease-in .2s ;
+    text-transform: capitalize;
+}
+
+.moving {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    position: relative;
+}
+
+.movingin{
+    display: flex;
+    white-space: nowrap;
+    gap: 2vw; /* Adds spacing between elements */
+    animation: moving 80s linear infinite;
+}
+.movingin h5{
+    font-size: 6vw;
+    font-family: 'TWK', Arial, sans-serif;
+}
+.movingleft {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    position: relative;
+}
+
+.movingleftin{
+    display: flex;
+    white-space: nowrap;
+    gap: 2vw; /* Adds spacing between elements */
+    animation: movingleft 90s linear infinite;
+}
+.movingleftin h5{
+    font-size: 6vw;
+    font-family: 'TWK', Arial, sans-serif;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes movingleft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+.firstbox{
+    background-color: rgba(255, 0, 0, 0);
+}
+
+
+#text{
+    transition: margin-left 5s ease-in; /* Adjust duration as needed */
+}
+
+#cursor{
+    background-color: rgba(255, 0, 0, 0);
+}
